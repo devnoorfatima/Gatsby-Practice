@@ -3,17 +3,15 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-module.exports = {
-  siteMetadata: {
-    title: `Title from siteMetadata`,
-  },
-  plugins: [
-    `gatsby-plugin-emotion`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
+export const siteMetadata = {
+  title: `Title from siteMetadata`,
+};
+export const plugins = [
+  `gatsby-plugin-emotion`,
+  {
+    resolve: `gatsby-plugin-typography`,
+    options: {
+      pathToConfigModule: `src/utils/typography`,
     },
-  ],
-}
+  },
+];
